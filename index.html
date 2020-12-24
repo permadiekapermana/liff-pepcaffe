@@ -10,13 +10,113 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom.css">
 </head>
-<body>    
+<body>
+    <!-- Container -->
+    <div class="container-sm">
+    <!-- Navbar -->
+    <!-- Image and text -->
+    <nav class="navbar navbar-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Coffee-PNG/Red_Cup_of%20Coffee_PNG_Picture.png?m=1507172107" alt="" width="30" height="24" class="d-inline-block align-top">
+            PEP Caffee
+        </a>
+        <form class="d-flex">
+                <p class="nav-link">Hi, Permadi Eka Permana</p>
+                <button class="btn btn-danger" type="submit">Close</button>
+        </form>
+        </div>
+    </nav>
+    <!-- Card Top -->
+    <div class="card-group">
+    <div class="card">
+        <img src="https://cdn.relevance.com/wp-content/uploads/2019/09/Content-Marketing-Strategy-for-a-Coffee-Shop-750x430.jpg" class="card-img-top rounded" height="250px" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">PEP Caffee</h5>
+        <p class="card-text">PEP Caffee adalah sebuah kopi shop yang menyediakan berbagai jenis minuman kopi dan non kopi sehingga cocok untuk dijadikan sebagai tempat nongkrong untuk pecinta kopi maupun bukan pecinta kopi.</p>
+        <p class="card-text"><small class="text-muted">Scroll ke bawah untuk melihat daftar menu.</small></p>
+        </div>        
+    </div>
+    </div>
+
+    <div class="daftarmenu">
     <div class="coffee">
         <h1>Coffee</h1>        
     </div>
     <button type="button" class="btn" id="order">Order</button>
     <div id="order-status"></div>
+    </div>
+    
+
+    <!-- Card Bottom -->
+    <div class="card">
+        <img src="suzy.jpg" class="rounded-circle mt-3 align-self-center" width="200px" height="200px" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Permadi Eka Permana</h5>
+        <p class="card-text"><strong>Status Pengguna</strong>
+        <br>
+        Membuka dengan App LINE : <strong><font color="green">True</font></strong>
+        <br>
+        Login dengan LINE ID : <strong><font color="green">True</font></strong>
+        </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-2">
+        <p>Copyright &#169; 2020 - Permadi Eka Permana</p>
+    </footer>
+    </div>
+
+    <header>
+        <nav>
+          <h1 class="nav-title">AshariFauzan-Cafetaria</h1>
+          <button type="button" id="line-login" class="btn visible" onclick="handleLogin()">Login</button>
+          <div id="account">
+            <img src="" alt="">
+            <ul class="blank">
+              <li id="line-logout" onclick="handleLogout()">Log Out</li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="login-wrapper blank">
+          <h1></h1>
+          <p></p>
+          <button id="first-login" class="btn" onclick="handleLogin()">Login</button>
+        </section>
+    
+        <h1 class="greeting"></h1>
+        <section id="wrapper">
+          <article id="left-wrapper">
+            <div class="card coffee">
+              <h1 class="card-title">Makanan</h1>
+            </div>
+            <button type="button" class="btn" id="order">Order</button>
+          </article>
+    
+          <article id='right-wrapper'>
+            <div class="line-status">
+              <h1>LINE Status</h1>
+              <ul>
+                <li id="isClient">App Line: </li>
+                <li id="isLogin">Is Login: </li>
+              </ul>
+              <p id="status-client"></p>
+            </div>
+            <div id="control-client"></div>
+            <div id="order-status"></div>
+          </article>
+        </section>
+      </main>
+      <footer>
+      </footer>
+    
     <!-- Javascript Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>

@@ -1,8 +1,8 @@
 const coffee = {
-  kopiKenanganMantan  : ['Kopi Kenangan Mantan', 18000],
-  dualShotIcedShaken     : ['Dual Shot Iced Shaken', 22000],
-  americano       : ['Americano / Long Black', 15000],
-  kopiKelapa    : ['Kopi Kelapa (Kemana Lagi Pacar?', 19000]
+  kopiKenanganMantan  : ['Kopi Kenangan Mantan', 'Kopi, Susu, Espresso, Pait', 18000],
+  dualShotIcedShaken     : ['Dual Shot Iced Shaken', 'Kopi, Susu, Espresso, Pait', 22000],
+  americano       : ['Americano / Long Black', 'Kopi, Susu, Espresso, Pait', 15000],
+  kopiKelapa    : ['Kopi Kelapa (Kemana Lagi Pacar?)', 'Kopi, Susu, Espresso, Pait', 19000]
 }
 
 let order     = {};
@@ -12,9 +12,29 @@ function loadMenu() {
   Object.entries(coffee).map(([key, value]) => {
     document.getElementsByClassName('coffee')[0]
     .innerHTML += `<div class='menu'>
+                    <div class='row'>
+                    <div class='col-sm'>
+                      One of three columns
+                    </div>
+                    <div class='col-sm'>
+                      One of three columns
+                    </div>
+                    <div class='col-sm'>
+                    <div class='counter'>
+                      <button class='btn minus hide' type='button'>-</button>
+                      <p class='quantity'>0</p>
+                      <button class='btn plus' type='button'>+</button>
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+
+
+                  <div class='menu'>
                       <div>
                           <h1>${value[0]}</h1>
-                          <span>${value[1]}</span>
+                          <p>${value[1]}</p>
+                          <span>${value[2]}</span>
                       </div>
                       <div class='counter'>
                         <button class='btn minus hide' type='button'>-</button>

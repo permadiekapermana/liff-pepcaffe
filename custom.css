@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0; }
+  
+  html {
+    background: #131313;
+    color: #eee;
+    font-family: 'Roboto', sans-serif; }
+  
+  .btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    background: #00B900;
+    cursor: pointer;
+    color: #eee; }
+    .btn:hover {
+      background: #20ff20; }
+  
+  .hide {
+    visibility: hidden !important; }
+  
+  .blank {
+    display: none !important;
+    height: 0px !important;
+    width: 0px !important; }
+  
+  header nav {
+    background: linear-gradient(235deg, orange, deeppink);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10vw; }
+    header nav .nav-title {
+      font-size: 1.3rem;
+      font-weight: bold; }
+    header nav #line-login {
+      display: none;
+      padding: 0.7em 2em;
+      text-transform: uppercase;
+      font-weight: 500; }
+    header nav #account {
+      position: relative;
+      display: flex;
+      align-items: center; }
+      header nav #account img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px; }
+      header nav #account ul {
+        position: absolute;
+        width: max-content;
+        top: 100%;
+        list-style: none;
+        background: #ddd;
+        color: #131313;
+        padding: 5px;
+        box-sizing: border-box;
+        cursor: pointer; }
+  
+  main {
+    margin: 0 auto;
+    padding: 50px 10vw; }
+    main .login-wrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 20vh;
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: white;
+      color: black;
+      transition: 1s ease; }
+      main .login-wrapper button {
+        margin-top: 20px;
+        width: 75%;
+        max-width: 300px;
+        padding: 1em 0; }
+    main section#wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 50px 0 0; }
+      main section#wrapper div h1 {
+        margin-bottom: 10px;
+        font-family: 'Rubik', sans-serif; }
+      main section#wrapper article {
+        max-width: 550px;
+        width: 45%; }
+      main section#wrapper article#left-wrapper > div:not(last-of-type) {
+        margin-bottom: 30px; }
+      main section#wrapper article#left-wrapper div.card h1.card-title {
+        text-align: center;
+        font-size: 24px;
+        background: linear-gradient(235deg, orange, deeppink); }
+      main section#wrapper article#left-wrapper div.card div.menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        main section#wrapper article#left-wrapper div.card div.menu div.counter {
+          display: flex; }
+          main section#wrapper article#left-wrapper div.card div.menu div.counter p {
+            padding: 5px 10px; }
+          main section#wrapper article#left-wrapper div.card div.menu div.counter button.minus {
+            background: #B90000; }
+            main section#wrapper article#left-wrapper div.card div.menu div.counter button.minus:hover {
+              background: #ff2020; }
+      main section#wrapper article#left-wrapper button#order {
+        width: 100%;
+        padding: 0.7em 0; }
+      main section#wrapper article#right-wrapper {
+        background: #eee;
+        color: #131313;
+        border-radius: 12px;
+        box-sizing: border-box;
+        padding: 20px;
+        height: max-content; }
+        main section#wrapper article#right-wrapper div h1 {
+          background: lightskyblue;
+          text-align: center;
+          color: #eee; }
+        main section#wrapper article#right-wrapper #order-status {
+          margin-top: 30px; }
+        main section#wrapper article#right-wrapper ul {
+          list-style: none; }
+  
+  @media (min-width: 0px) and (max-width: 550px) {
+    main section#wrapper {
+      flex-direction: column; }
+      main section#wrapper article {
+        width: 100%; }
+      main section#wrapper article#left-wrapper {
+        margin-bottom: 50px; } }
+  
+  /*# sourceMappingURL=style.css.map */
+
+.footer{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 0;
+}
